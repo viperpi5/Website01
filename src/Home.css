@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+  /** Base colors */
+--clr-dark-a0: #000000;
+--clr-light-a0: #ffffff;
+
+/** Dark theme primary colors */
+--clr-primary-a0: #ae2d2d;
+--clr-primary-a10: #ba4841;
+--clr-primary-a20: #c66056;
+--clr-primary-a30: #d1776d;
+--clr-primary-a40: #db8e83;
+--clr-primary-a50: #e4a49b;
+
+/** Dark theme surface colors */
+--clr-surface-a0: #121212;
+--clr-surface-a10: #282828;
+--clr-surface-a20: #3f3f3f;
+--clr-surface-a30: #575757;
+--clr-surface-a40: #717171;
+--clr-surface-a50: #8b8b8b;
+
+/** Dark theme tonal surface colors */
+--clr-surface-tonal-a0: #211715;
+--clr-surface-tonal-a10: #362c2a;
+--clr-surface-tonal-a20: #4c4341;
+--clr-surface-tonal-a30: #635b59;
+--clr-surface-tonal-a40: #7b7472;
+--clr-surface-tonal-a50: #948e8d;
+
+color: var(--clr-primary-a10); 
+background-color: var(--clr-surface-a0); 
+}
+
+#Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#Title h1 {
+  background: linear-gradient(to bottom left, var(--clr-primary-a10), var(--clr-primary-a30));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+}
+#AboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+  border-radius: 10px;
+  background-color: var(--clr-surface-a10);
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+#Text p {
+  background: linear-gradient(to bottom left, var(--clr-primary-a10), var(--clr-primary-a30));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+}
+
+#Skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  border-radius: 10px;
+  background-color: var(--clr-surface-a10);
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#Skills ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+}
+
+#Skills li {
+  background-color: var(--clr-surface-a0);
+  color: var(--clr-primary-a10);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#Skills li:hover {
+  background-color: var(--clr-primary-a20);
+  Color: var(--clr-light-a0);
+}
+
+#Skills p {
+  font-size: 1.25rem;
+  color: var(--clr-primary-a10);
+  margin-bottom: 10px;
+  text-align: center;
+}
